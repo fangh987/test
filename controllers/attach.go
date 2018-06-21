@@ -10,7 +10,7 @@ import(
 type AttachController struct {
 	beego.Controller
 }
-
+//this is a test
 func (this *AttachController) Get() {
 	filePath,err := url.QueryUnescape(this.Ctx.Request.RequestURI[1:])
 	if err != nil {
